@@ -14,7 +14,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="imagem/png" href="logo_jp.png">
+    <link rel="shortcut icon" type="imagem/png" href="logoicon.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -22,6 +22,40 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
       <title>Relógio Masculino WWOOR Luxo 2021  </title>
+      <!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2812316412366899');
+  fbq('track', 'PageView');
+</script>
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '361442788144914');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=361442788144914&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=2812316412366899&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
 </head>
 
 <body style="background-attachment: fixed;background-image: url(relogio.png);background-color: black;background-repeat: no-repeat, repeat;background-position: center;" >
@@ -150,7 +184,7 @@
         </div>
         <div class="d-flex justify-content-center">   <h6 class="marca mt-1 " style="color: #02b502;text-align: center;"><b>Devolução grátis <span style="color: white;">Você tem 7 dias a partir da data de recebimento.</span></b> </h6></div>
         <div class="d-flex justify-content-center">
-            <a href="" class="efeito efeito-3 mb-2 mt-2">Comprar</a>
+          <button type="submit" id="link" onclick="link()" class="efeito efeito-3 mb-2 " >Comprar</button>
         </div>
 
         </div>
@@ -333,7 +367,7 @@
                 </div>
             </div>
             <div class="d-flex justify-content-center">
-                <a href="" class="efeito efeito-3 mb-2 mt-2">Comprar</a>
+              <button type="submit" id="link" onclick="link()" class="efeito efeito-3 mb-2 " >Comprar</button>
             </div>
         </div>
        
@@ -482,8 +516,29 @@ let valory=0
       }
    
   }
+  function link(){
+  
+  var link= document.getElementById("link")
+  var select=document.getElementById("select").value
 
+  if(select==="x" ){
+    Swal.fire({
+    
+    icon: 'warning',
+    title: 'Selecione a Cor',
+    showConfirmButton: false,
+    timer: 1500
+  })
 
+  }else{
+
+    if(select==="G"){
+      window.location.href="https://montresempire.pay.yampi.com.br/r/ECW49ZEZHB"
+    }else{
+      window.location.href="https://montresempire.pay.yampi.com.br/r/1H4DNDQV2B"
+    }
+  }
+  }
 
 </script>
 
